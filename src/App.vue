@@ -9,8 +9,13 @@
 </template>
 
 <style>
+@font-face {
+  font-family: "Comfortaa";
+  src: local("Comfortaa"),
+    url(./assets/fonts/comfortaa/Comfortaa-Light.ttf) format("truetype");
+}
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Comfortaa, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
