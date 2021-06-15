@@ -1,16 +1,28 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+    <NavBar />
     <router-view />
   </div>
 </template>
+<!-- ./src/App.vue -->
 
+...
+<script type="text/javascript">
+import NavBar from "@/components/NavBar.vue";
+export default {
+  components: {
+    NavBar, // register component
+  },
+};
+</script>
 <style>
+@font-face {
+  font-family: "Comfortaa";
+  src: local("Comfortaa"),
+    url(./assets/fonts/comfortaa/Comfortaa-Light.ttf) format("truetype");
+}
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Comfortaa, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
