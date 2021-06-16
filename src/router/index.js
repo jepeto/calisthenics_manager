@@ -32,6 +32,20 @@ const routes = [
       ],
     },
   },
+    {
+    path: "/wiki",
+    name: "Wiki",
+    component: () => import("../views/Wiki.vue"),
+    meta: {
+      title: "Wiki",
+      metaTags: [
+        {
+          name: "Wiki",
+          content: "Containg information for nutrition, exercises etc.",
+        },
+      ],
+    },
+  },
   {
     path: "/parks",
     name: "Parks",

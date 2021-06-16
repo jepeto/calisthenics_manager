@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <NavBar />
-    <router-view />
+    <div class="ourRouterView" @click="$store.dispatch('toggleMenu', false)">
+      <router-view />
+    </div>
   </div>
 </template>
 <!-- ./src/App.vue -->
