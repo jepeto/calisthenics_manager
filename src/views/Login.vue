@@ -1,6 +1,6 @@
 <template>
   <div class="login">
-    <h2 class="text-3xl">Login</h2>
+    <h2 class="text-3xl">Login Form</h2>
   </div>
 </template>
 
@@ -10,4 +10,5 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped></style>
+>
