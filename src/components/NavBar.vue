@@ -68,7 +68,7 @@
                 transition
                 duration-500
               "
-              to="/wiki"
+              to="/nutrition"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -81,10 +81,10 @@
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   stroke-width="2"
-                  d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"
                 />
               </svg>
-              <span>Wiki</span></router-link
+              <span>Nutrition</span></router-link
             >
 
             <router-link
@@ -115,10 +115,12 @@
                   d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"
                 />
               </svg>
-              <span>Support</span></router-link
+              <span>Contact Us</span></router-link
             >
           </div>
         </div>
+
+        <SearchBar />
         <!--Secondary Nav-->
         <div class="hidden lg:flex space-x-1 items-center">
           <router-link
@@ -185,198 +187,26 @@
         </div>
 
         <!-- Mobile Button Goes Here -->
-        <div class="lg:hidden flex items-center">
-          <button class="mobile-menu-toggler">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            </svg>
-          </button>
-        </div>
+        <HamburgerIcon />
       </div>
       <!--Movile View-->
-      <div
-        class="mobile-menu lg:hidden"
-        :class="{ hidden: !$store.getters.getMenuState }"
-      >
-        <router-link
-          class="
-            flex
-            space-x-2
-            py-7
-            px-3
-            border-b-2
-            hover:border-indigo-400
-            border-transparent
-            transition
-            duration-500
-          "
-          to="/dashboard"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2"
-            />
-          </svg>
-          <span>Dashboard</span></router-link
-        >
-        <router-link
-          class="
-            flex
-            space-x-2
-            py-7
-            px-3
-            border-b-2
-            hover:border-indigo-400
-            border-transparent
-            transition
-            duration-500
-          "
-          to="/wiki"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-            />
-          </svg>
-          <span>Wiki</span></router-link
-        >
-
-        <router-link
-          class="
-            flex
-            space-x-2
-            py-7
-            px-3
-            border-b-2
-            hover:border-indigo-400
-            border-transparent
-            transition
-            duration-500
-          "
-          to="/contact"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"
-            />
-          </svg>
-          <span>Support</span></router-link
-        >
-        <hr />
-        <router-link
-          class="
-            flex
-            space-x-2
-            py-7
-            px-3
-            border-b-2
-            hover:border-indigo-400
-            border-transparent
-            transition
-            duration-500
-          "
-          to="/login"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"
-            />
-          </svg>
-          <span>Login</span></router-link
-        >
-        <router-link
-          class="
-            flex
-            space-x-2
-            py-7
-            px-3
-            border-b-2
-            hover:border-indigo-400
-            border-transparent
-            hover:font-semibold
-            transition
-            duration-500
-          "
-          to="/signup"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"
-            />
-          </svg>
-          <span>Sign Up</span></router-link
-        >
-      </div>
+      <MobileMenu />
     </div>
   </nav>
 </template>
 
 <script>
+import MobileMenu from "./MobileMenu.vue";
+import HamburgerIcon from "./HamburgerIcon.vue";
+import SearchBar from "./SearchBar.vue";
 export default {
   name: "NavBar",
-  mounted() {
-    const menuToggler = document.querySelector("button.mobile-menu-toggler");
-
-    menuToggler.addEventListener("click", () => {
-      this.$store.dispatch("toggleMenu", !this.$store.getters.getMenuState);
-    });
+  components: {
+    MobileMenu,
+    HamburgerIcon,
+    SearchBar,
   },
+  mounted() {},
 };
 </script>
 
