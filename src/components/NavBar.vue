@@ -68,7 +68,7 @@
                 transition
                 duration-500
               "
-              to="/wiki"
+              to="/nutrition"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -81,10 +81,10 @@
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   stroke-width="2"
-                  d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"
                 />
               </svg>
-              <span>Wiki</span></router-link
+              <span>Nutrition</span></router-link
             >
 
             <router-link
@@ -115,7 +115,7 @@
                   d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"
                 />
               </svg>
-              <span>Support</span></router-link
+              <span>Contact Us</span></router-link
             >
           </div>
         </div>
@@ -251,7 +251,7 @@
             transition
             duration-500
           "
-          to="/wiki"
+          to="/nutrition"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -264,10 +264,10 @@
               stroke-linecap="round"
               stroke-linejoin="round"
               stroke-width="2"
-              d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"
             />
           </svg>
-          <span>Wiki</span></router-link
+          <span>Nutrition</span></router-link
         >
 
         <router-link
@@ -298,7 +298,7 @@
               d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"
             />
           </svg>
-          <span>Support</span></router-link
+          <span>Contact Us</span></router-link
         >
         <hr />
         <router-link
