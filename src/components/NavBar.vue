@@ -119,6 +119,8 @@
             >
           </div>
         </div>
+
+        <SearchBar />
         <!--Secondary Nav-->
         <div class="hidden lg:flex space-x-1 items-center">
           <router-link
@@ -196,11 +198,13 @@
 <script>
 import MobileMenu from "./MobileMenu.vue";
 import HamburgerIcon from "./HamburgerIcon.vue";
+import SearchBar from "./SearchBar.vue";
 export default {
   name: "NavBar",
   components: {
     MobileMenu,
     HamburgerIcon,
+    SearchBar,
   },
   mounted() {},
 };
