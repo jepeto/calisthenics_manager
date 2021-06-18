@@ -26,18 +26,7 @@
       "
     >
       <router-link
-        class="
-          flex
-          space-x-2
-          items-center
-          py-4
-          px-3
-          h-full
-          transition
-          border-b-4 border-transparent
-          hover:border-indigo-400
-          duration-500
-        "
+        class="nav-link h-full"
         to="/login"
         v-if="!$store.getters.getUserState"
       >
@@ -57,18 +46,7 @@
       >
 
       <router-link
-        class="
-          flex
-          space-x-2
-          py-4
-          px-3
-          items-center
-          h-full
-          transition
-          border-b-4 border-transparent
-          hover:border-indigo-400
-          duration-500
-        "
+        class="nav-link h-full"
         to="/signup"
         v-if="!$store.getters.getUserState"
       >
@@ -89,18 +67,7 @@
         <span>Sign Up</span></router-link
       >
       <router-link
-        class="
-          flex
-          space-x-2
-          py-4
-          px-3
-          h-full
-          items-center
-          border-b-4 border-transparent
-          hover:border-indigo-400
-          transition
-          duration-500
-        "
+        class="nav-link h-full"
         to="/"
         v-if="$store.getters.getUserState"
       >

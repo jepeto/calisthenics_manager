@@ -2,17 +2,7 @@
   <div class="hidden lg:flex space-x-1 text-sm items-center">
     <div class="h-full flex">
       <router-link
-        class="
-          flex
-          space-x-2
-          py-4
-          px-3
-          items-center
-          border-b-4 border-transparent
-          hover:border-indigo-400
-          transition
-          duration-500
-        "
+        class="nav-link"
         to="/dashboard"
         v-if="$store.getters.getUserState"
       >
@@ -32,20 +22,7 @@
         </svg>
         <span class="items-center">Dashboard</span></router-link
       >
-      <router-link
-        class="
-          flex
-          space-x-2
-          py-4
-          px-3
-          items-center
-          border-b-4 border-transparent
-          hover:border-indigo-400
-          transition
-          duration-500
-        "
-        to="/parks"
-      >
+      <router-link class="nav-link" to="/parks">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           class="h-5 w-5"
@@ -62,20 +39,7 @@
         </svg>
         <span>Parks</span></router-link
       >
-      <router-link
-        class="
-          flex
-          space-x-2
-          py-4
-          px-3
-          items-center
-          border-b-4 border-transparent
-          hover:border-indigo-400
-          transition
-          duration-500
-        "
-        to="/nutrition"
-      >
+      <router-link class="nav-link" to="/nutrition">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           class="h-5 w-5"
@@ -93,20 +57,7 @@
         <span>Nutrition</span></router-link
       >
 
-      <router-link
-        class="
-          flex
-          space-x-2
-          py-4
-          px-3
-          items-center
-          border-b-4 border-transparent
-          hover:border-indigo-400
-          transition
-          duration-500
-        "
-        to="/contact"
-      >
+      <router-link class="nav-link" to="/contact">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           class="h-5 w-5"

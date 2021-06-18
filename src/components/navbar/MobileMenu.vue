@@ -6,7 +6,7 @@
     <!-- Dashboard IF User is Logged In -->
 
     <router-link
-      class="flex space-x-2 py-7 px-3 border-t transition duration-500"
+      class="mobile-nav-link"
       to="/dashboard"
       v-if="$store.getters.getUserState"
     >
@@ -27,10 +27,7 @@
       <span>Dashboard</span></router-link
     >
     <!-- Parks -->
-    <router-link
-      class="flex space-x-2 py-7 px-3 border-t transition duration-500"
-      to="/parks"
-    >
+    <router-link class="mobile-nav-link" to="/parks">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         class="h-6 w-6"
@@ -48,19 +45,7 @@
       <span>Parks</span></router-link
     >
     <!-- Nutrition -->
-    <router-link
-      class="
-        flex
-        space-x-2
-        py-7
-        px-3
-        border-t
-        font-comforta
-        transition
-        duration-500
-      "
-      to="/nutrition"
-    >
+    <router-link class="mobile-nav-link" to="/nutrition">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         class="h-6 w-6"
@@ -79,10 +64,7 @@
     >
     <!-- Contact -->
 
-    <router-link
-      class="flex space-x-2 py-7 px-3 border-t transition duration-500"
-      to="/contact"
-    >
+    <router-link class="mobile-nav-link" to="/contact">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         class="h-6 w-6"

@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .nav-link {
+    @apply flex
+          space-x-2
+          py-4
+          px-3
+          items-center
+          border-b-4 border-transparent
+          hover:border-indigo-400
+          transition
+          duration-500;
+  }
+
+  .mobile-nav-link {
+    @apply flex space-x-2 py-7 px-3 border-t transition duration-500;
+  }
+}

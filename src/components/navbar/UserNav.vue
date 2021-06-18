@@ -2,7 +2,7 @@
   <div class="usernav">
     <!-- Login -->
     <router-link
-      class="flex space-x-2 py-7 mt-6 px-3 border-t transition duration-500"
+      class="mobile-nav-link"
       to="/login"
       v-if="!$store.getters.getUserState"
     >
@@ -22,7 +22,7 @@
     >
     <!-- Sign Up -->
     <router-link
-      class="flex space-x-2 py-7 px-3 border-t transition duration-500"
+      class="mobile-nav-link"
       to="/signup"
       v-if="!$store.getters.getUserState"
     >
@@ -45,7 +45,7 @@
 
     <!-- Logout -->
     <router-link
-      class="flex space-x-2 py-7 px-3 border-t transition duration-500"
+      class="mobile-nav-link"
       to="/"
       v-if="$store.getters.getUserState"
     >
