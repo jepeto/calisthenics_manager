@@ -2,6 +2,7 @@
   <div class="lg:hidden flex items-center">
     <button
       class="mobile-menu-toggler hamburger hamburger--collapse"
+      :class="{ 'is-active': $store.getters.getMenuState }"
       type="button"
     >
       <span class="hamburger-box">
@@ -18,11 +19,14 @@ export default {
 
     //When hamburger icon is clicked
     menuToggler.addEventListener("click", () => {
-      !this.$store.getters.getMenuState
-        ? menuToggler.classList.add("is-active")
-        : menuToggler.classList.remove("is-active");
-
       this.$store.dispatch("toggleMenu", !this.$store.getters.getMenuState);
+    });
+
+    menuToggler.addEventListener("mouseover", () => {
+      menuToggler.classList.add("animate-spin-slow");
+    });
+    menuToggler.addEventListener("mouseleave", () => {
+      menuToggler.classList.remove("animate-spin-slow");
     });
   },
 };
