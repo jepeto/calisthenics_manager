@@ -18,6 +18,10 @@ export default {
 };
 </script>
 <style>
+* {
+  transition: all 0.2s;
+}
+
 @font-face {
   font-family: "Comfortaa";
   src: local("Comfortaa"),

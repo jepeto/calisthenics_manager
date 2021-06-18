@@ -9,8 +9,7 @@
           py-4
           px-3
           items-center
-          border-b-4 border-transparent
-          hover:border-indigo-400
+          border-b-4 border-transparent    
           transition
           duration-500;
   }
