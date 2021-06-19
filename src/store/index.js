@@ -6,6 +6,7 @@ Vue.use(Vuex);
 export default new Vuex.Store({
   state: {
     isMenuOpen: false,
+    isLoggedIn: false,
   },
   mutations: {
     toggleMenu(state, payload) {
@@ -20,6 +21,9 @@ export default new Vuex.Store({
   getters: {
     getMenuState(state) {
       return state.isMenuOpen;
+    },
+    getUserState(state) {
+      return state.isLoggedIn;
     },
   },
   modules: {},

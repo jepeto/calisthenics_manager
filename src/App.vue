@@ -10,7 +10,7 @@
 
 ...
 <script type="text/javascript">
-import NavBar from "@/components/NavBar.vue";
+import NavBar from "@/components/navbar/NavBar.vue";
 export default {
   components: {
     NavBar, // register component
@@ -18,6 +18,10 @@ export default {
 };
 </script>
 <style>
+* {
+  transition: all 0.2s;
+}
+
 @font-face {
   font-family: "Comfortaa";
   src: local("Comfortaa"),
